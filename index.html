@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Simple Article Listing | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        font-family: 'Arial', sans-serif;
+      }
+      .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+      }
+      .contenedor h1 {
+        text-align: center;
+        font-size: 32px;
+        color: rgb(6, 6, 6);
+        margin-top: 40px;
+        margin-bottom: 20px;
+        
+        
+      }
+      .contenedor img {
+        width: 50%;
+        height: 10px;
+        margin: 30px 60px;
+        
+      }
+      .articles img {
+        width: 150px;
+        height: 150px;
+        border-radius: 8px;
+      }
+      .articles {
+        
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        
+        
+      }
+      .articles article {
+        
+        display: flex;
+        align-items: center;   
+        border-radius: 8px;
+        background-color: white;
+        
+      }
+      .texto {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .texto h2 {
+        font-size: 25px;
+        color: rgb(6, 6, 6);
+        margin: 0;
+      }
+      .texto p {
+        font-size: 16px;
+        color: rgb(107, 114, 128);
+        margin: 0;
+      }
+      article:hover {
+        background-color: rgb(243, 244, 246);
+        cursor: pointer;
+      }
+      
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+      @media (max-width: 1350px) {
+        .contenedor img {
+          width: 80%;
+        }
+        .articles {
+          width: 90%;
+        }
+        .articles article {
+          flex-direction: column;
+          align-items: center;
+        }
+        .articles img {
+          width: 100%;
+          height: auto;
+        }
+      }
+     
+      
+      @media (min-width: 412px) {
+        .contenedor h1 {
+          font-size: 20px;
+        }
+        .articles {
+          width: 100%;
+        }
+        .articles article {
+          flex-direction: column;
+          align-items: center;
+        }
+        .articles img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">      
+      <h1>We release interesting articles about technology</h1>   
+      <img src="resources\Seperator.svg" alt=""> 
+
+      <div class="articles">
+        <article >
+          <img src="resources/photo_1.png" alt="">
+          <div class="texto">
+            <h2>Unlocking the Power of Cloud Computing: A Guide to Scalable Solutions</h2>
+            <p>November 12, 2024</p>
+          </div>
+        </article>
+        
+     
+        <article >          
+          <img src="resources/photo_3.png" alt="">
+          <div class="texto">
+            <h2>The Future of AI:How Machine Learning is Revolutionizing Industries</h2>          
+            <p>November 10, 2024</p>
+          </div>
+        </article>
+        
+
+        <article >
+          <img src="resources/photo_2.png" alt="">
+          <div class="texto">
+            <h2>The Impact of 5G on Business:How Faster Networks are Transforming the Way We Work</h2>          
+            <p>November 8, 2024</p>
+          </div>
+        </article>
+      </div>
+      
+    </div>
+
+
+      
+      
+    
+    <div class="author-info">
+      <a href="#">Sebastian Rico A</a>
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
